@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yang JungMo · Video Editor & Motion Designer</title>
+  <title>Baek Donghyun · Video Editor & Motion Designer</title>
   <meta name="description" content="영상 편집" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
 </head>
 <body>
-  <header>
+  <!-- 상단 네비게이션 -->
+  <header class="site-header">
     <div class="container head">
       <div class="brand">
-        <div class="logo">JM</div>
-        <div>
-          <div style="font-weight:800;">Yang JungMo</div>
-          <div style="font-size:12px; color:var(--sub);">Video Editor · Motion Designer</div>
+        <div class="logo">DH</div>
+        <div class="brand-text">
+          <div class="brand-name">Baek Donghyun</div>
+          <div class="brand-role">Video Editor · Motion Designer</div>
         </div>
       </div>
       <div class="actions">
         <button class="iconBtn" id="themeToggle" title="Light/Dark">🌓</button>
-        <button class="iconBtn" id="paletteToggle" title="Colors">🎨</button>
-        <nav>
+        <nav class="main-nav">
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -30,78 +31,208 @@
   </header>
 
   <main>
+    <!-- 히어로 영역 -->
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <h1>양정모 포트폴리오</h1>
-          <p class="lead">실무 현장에서 터득한 역량에 더하여 겸손함으로 회사와 함께 성장할 양정모입니다.</p>
-          <div class="cta">
-            <a class="btn" href="#work">View Work</a>
-            <a class="btn ghost" href="#contact">Contact</a>
+        <!-- 왼쪽: 타이틀 & 인트로 -->
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1>백동현 포트폴리오</h1>
+          <div class="profile-photo">
+                <img src="./career.jpg" alt="백동현 프로필 사진">
+              </div>
+          
+
+          <div class="hero-tags">
+            <span class="tag">Video Editing</span>
+            <span class="tag">Motion Design</span>
+            <span class="tag">Graphics</span>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <div class="meta-label">Base</div>
+              <div class="meta-value">Seoul, Korea</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Focus</div>
+              <div class="meta-value">컷 편집 · 모션그래픽 · 타이포그래피</div>
+            </div>
           </div>
         </div>
-        <div class="panel">
-          <div class="aspect-video">
-            <img src="./mq4.png" alt="reel" />
-            <div class="playMask"><button class="play" id="openReel">▶</button></div>
+
+        <!-- 오른쪽: 프로필 / 학력·경력 카드 -->
+        <div class="hero-panel">
+          <div class="profile-card">
+            <div class="profile-top">
+              
+              <div class="profile-info">
+                <div class="profile-name">백동현</div>
+                <div class="profile-role">Video Editor · Motion Designer</div>
+                <div class="profile-line">
+                  개발·디자인·모션을 모두 경험한 지원자<br/><br/>
+                  개발자에서 영상 편집·모션디자인으로<br />
+                  방향을 전환하고 있는 지원자 백동현입니다.
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-grid">
+              <div class="profile-section">
+                <div class="section-title">학력</div>
+                <ul class="section-list">
+                  <li>
+                    <p class="item-title">ICT 폴리텍 대학</p>
+                    <p class="item-sub">모바일통신 / 2015.03 ~ 2019.02</p>
+                  </li>
+                  <li>
+                    <p class="item-title">풍생고등학교</p>
+                    <p class="item-sub"> - / 2011.03 ~ 2014.02</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile-section">
+                <div class="section-title">경력</div>
+                <ul class="section-list">
+                  <li>
+                    <p class="item-title">wala inc</p>
+                    <p class="item-sub">개발 / 앱 개발</p>
+                  </li>
+                  <li>
+                    <p class="item-title">pref</p>
+                    <p class="item-sub">개발 / 웹 개발</p>
+                  </li>
+                  <li>
+                    <p class="item-title">프리랜서</p>
+                    <p class="item-sub">개발 / 웹,앱 개발</p>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+            <div class="profile-footer">
+              <span class="badge">영상 편집 전향 준비 중</span>
+              <span class="badge badge-outline">기존: 앱·웹 개발 프론트 경험</span>
+            </div>
           </div>
-        </div>
       </div>
     </section>
 
-    <section id="work">
+    <!-- 작업물 섹션 -->
+    <section id="work" class="section">
       <div class="container">
         <div class="toolbar">
-          <h2>Selected Work</h2>
-          <div class="search" role="search">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            <input id="query" placeholder="제목/설명 검색" />
+          <div class="toolbar-left">
+            <h2>Selected Work</h2>
+            <p class="section-sub">
+              상업 편집, 개인 작업, 연습용 모션까지 선별한 작업들입니다.
+            </p>
+          </div>
+          <div class="toolbar-right">
+            <div class="search" role="search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input id="query" placeholder="제목/설명 검색" />
+            </div>
           </div>
         </div>
+
         <div class="chips" id="chips"></div>
         <div class="grid" id="grid"></div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="container cols">
-        <div>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container cols about-grid">
+        <div class="about-copy">
           <h2>About</h2>
-          <p style="color:var(--sub)">120%, 150%를 하는 에이스가 되고자 하는 포부는 있습니다.</p>
-          <p style="color:var(--sub)">하지만 신입인 저의 포부는 허황된 얘기라고 생각합니다.</p>
-          <p style="color:var(--sub)">먼저 직원으로서 온전한 한 사람이 되기 위해 최선을 다하고 싶습니다.</p>
+          <p class="about-lead">
+            120%, 150%를 하는 에이스가 되고자 하는 포부는 있습니다.<br/>
+            하지만 신입인 저의 포부는 허황된 얘기라고 생각합니다.<br/>
+            먼저 직원으로서 온전한 한 사람이 되기 위해 최선을 다하고 싶습니다.
+          </p>
+          <div class="about-highlights">
+            <div class="about-chip">
+              <span class="label">Background</span>
+              <span class="value">개발 → 영상 편집 · 모션</span>
+            </div>
+            <div class="about-chip">
+              <span class="label">Strength</span>
+              <span class="value">기획 이해 + 리듬감 있는 컷 편집</span>
+            </div>
+            <div class="about-chip">
+              <span class="label">Style</span>
+              <span class="value">깔끔한 타이포와 단정한 색감</span>
+            </div>
+          </div>
         </div>
-        <div class="panel" style="padding:14px">
-          <h3 style="margin:6px 0 10px">Tools</h3>
+
+        <div class="panel tools-panel">
+          <h3>Tools</h3>
           <ul class="list">
-            <li>Premiere Pro · After Effects</li>
-            <li>Photoshop · Illustrator</li>
-            <li>Cinema4D</li>
-            <li></li>
+            <li>
+              <span class="tool-name">Premiere Pro · After Effects</span>
+              <span class="tool-desc">컷 편집 · 자막 · 오디오 클리닝 · 모션그래픽</span>
+            </li>
+            <li>
+              <span class="tool-name">Photoshop · Illustrator</span>
+              <span class="tool-desc">썸네일 · 그래픽 요소 · 일러스트</span>
+            </li>
+            <li>
+              <span class="tool-name">Cinema4D</span>
+              <span class="tool-desc">3D modeling</span>
+            </li>
+            <li>
+              <span class="tool-name">Flutter · HTML · CSS · JS · React</span>
+              <span class="tool-desc">웹/앱 UI 구현 및 포트폴리오 개발</span>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="panel" style="padding:16px">
-          <h2>Contact</h2>
-          <p class="lead">메일 부탁드립니다.</p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
-            <a class="btn" href="mailto:wjdah1293@naver.com">wjdah1293@naver.com</a>
+    <!-- Contact -->
+    <section id="contact" class="section section-muted">
+      <div class="container contact-layout">
+        <div class="panel contact-panel">
+          <div class="contact-header">
+            <h2>Contact</h2>
+            <p class="lead">
+              
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn"
+              href="https://mail.google.com/mail/?view=cm&to=zxbdhxz@naver.com"
+              target="_blank">
+              zxbdhxz@naver.com
+            </a>
+          </div>
+          <div class="contact-meta">
+            <div>상시 확인 가능</div>
+            <div></div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- 푸터 -->
   <footer>
     <div class="container foot">
-      <div>© <span id="year"></span> Yang JungMo</div>
+      <div>© <span id="year"></span> Baek Donghyun</div>
+      <div>HTML · CSS · JS (Vanilla)</div>
     </div>
   </footer>
 
+  <!-- 모달 플레이어 -->
   <div class="modal" id="modal" aria-hidden="true">
     <div class="dialog" role="dialog" aria-modal="true">
       <div class="player" id="player"></div>
@@ -115,20 +246,6 @@
     </div>
   </div>
 
-  <!-- 🎨 실시간 색상 팔레트 패널 -->
-  <aside class="drawer" id="paletteDrawer">
-    <div class="row"><label>배경</label><input type="color" id="c_bg" value="#0b0b0c" /></div>
-    <div class="row"><label>패널</label><input type="color" id="c_panel" value="#121214" /></div>
-    <div class="row"><label>보조배경</label><input type="color" id="c_muted" value="#1b1b1f" /></div>
-    <div class="row"><label>텍스트</label><input type="color" id="c_text" value="#eaeaea" /></div>
-    <div class="row"><label>서브텍스트</label><input type="color" id="c_sub" value="#a9a9b4" /></div>
-    <div class="row"><label>테두리</label><input type="color" id="c_ring" value="#2a2a30" /></div>
-    <div class="row"><label>포인트</label><input type="color" id="c_accent" value="#ededed" /></div>
-    <div class="row" style="justify-content:flex-end; gap:8px; margin-top:6px">
-      <button class="chip" id="resetColors">Reset</button>
-      <button class="chip" id="saveColors">Save</button>
-    </div>
-  </aside>
   <script src="script.js"></script>
 </body>
 </html>
