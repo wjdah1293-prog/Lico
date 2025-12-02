@@ -26,7 +26,7 @@ const PROJECTS = [
   },
   {
     id: 'CF',
-    title: '네이버 시리즈 광고',
+    title: '네이버 시리즈 광고 포트폴리오',
     categories: ['Motion', 'After Effects'],
     thumb: './네이버 시리즈 사진.png',
     youtubeId: 'R9ApaNg-3X8',
@@ -62,13 +62,49 @@ const PROJECTS = [
   },
   {
     id: 'Ddasd',
-    title:'날 좀 좋아하시개',
-    categories: ['AI','PS'],
+    title:'날 좀 좋아하시개 포트폴리오',
+    categories: ['AI','PS','design'],
     thumb: './Plz.png',
     youtubeId: '',
     description: '포트폴리오',
     // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
     tools: ['AI', 'PS'],
+    role: '',
+    duration: ''
+  },
+  {
+    id: 'nelson museum',
+    title:'넬슨신 애니메이션 아트 센터 로고 모션 그래픽',
+    categories: ['after effects','design'],
+    thumb: 'Nelson.png',
+    youtubeId: '432-OD0KXG0',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['after effects'],
+    role: '',
+    duration: ''
+  },
+  {
+    id: 'nelson museum2',
+    title:'넬슨신 애니메이션 아트 센터 왕후 심청 트레일러 인트로',
+    categories: ['after effects','design'],
+    thumb: 'Nelson2.png',
+    youtubeId: '-E3ZvVwMbKY',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['after effects'],
+    role: '',
+    duration: ''
+  },
+  {
+    id: 'nelson museum3',
+    title:'넬슨신 애니메이션 아트 센터 매직랜턴 모션그래픽',
+    categories: ['after effects','motion'],
+    thumb: 'Nelson3.png',
+    youtubeId: 'ndFWscvHlDI',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['after effects'],
     role: '',
     duration: ''
   }
