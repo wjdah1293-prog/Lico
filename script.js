@@ -2,61 +2,77 @@
 const PROJECTS = [
   {
     id: 'reel-2025',
-    title: '미제사건 꼬꼬무 포트폴리오',
-    categories: ['Cut', 'Premiere Pro', 'After Effects'],
-    thumb: './mq5.png',
-    youtubeId: '4iqhan3xk8k',
+    title: 'IF 포트폴리오',
+    categories: ['Cut', 'Premiere Pro', 'After Effects', '촬영', '연출'],
+    thumb: './IF 포스터 양정모.png',
+    youtubeId: 'xXLmdcuTph4',
     description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
     tools: ['Premiere Pro', 'After Effects'],
     role: 'Editor',
-    duration: '11:21'
-  },
-  {
-    id: 'r',
-    title: '미제사건 꼬꼬무 포트폴리오',
-    categories: ['AI'],
-    thumb: './mq5.png',
-    youtubeId: '',
-    description: '이미지',
-    tools: ['AI'],
-    role: 'Editor',
-    duration: '11:21'
+    duration: '04:25'
   },
   {
     id: 'ad-mock-juice',
-    title: '짱구는 못말려 타이포그래피',
-    categories: ['After Effects', 'Illustrator'],
-    thumb: './mq3.jpg',
-    youtubeId: 'O4pFvJxioxE',
-    description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">스토리보드</a><br/><a href="./test.pdf" target="_blank" rel="noopener noreferrer">기획</a>`,
+    title: 'KANU 광고 포트폴리오',
+    categories: ['After Effects', 'Premiere Pro', 'Cut', '촬영', '연출'],
+    thumb: './카누 사진.png',
+    youtubeId: 'RwGcRT29wzo',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['After Effects', 'Premiere Pro'],
+    role: 'Editor',
+    duration: '01:34'
+  },
+  {
+    id: 'CF',
+    title: '네이버 시리즈 광고',
+    categories: ['Motion', 'After Effects'],
+    thumb: './네이버 시리즈 사진.png',
+    youtubeId: 'R9ApaNg-3X8',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
     tools: ['After Effects', 'Illustrator'],
     role: 'Motion',
-    duration: '01:02'
+    duration: '01:14'
   },
   {
     id: 'ktype-typography',
-    title: 'NAVER VIBE 광고',
+    title:"How It's Done 타이포그래피",
     categories: ['Motion', 'After Effects'],
-    thumb: './mq2.png',
-    youtubeId: 'bzAPf19AYeQ',
+    thumb: "./How It's Done 사진.png",
+    youtubeId: 'by6K_Iab9vc',
     description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
     tools: ['After Effects', 'Illustrator'],
     role: 'Motion',
-    duration: '00:25'
+    duration: '00:28'
   },
   {
-    id: 'c4d',
-    title: 'c4d 연령고지',
-    categories: ['Cinema4D'],
-    thumb: './mq4.png',
-    youtubeId: 'JPXQbL-Vsy0',
+    id: 'age notice',
+    title:'연령고지',
+    categories: ['Cinema4D', 'After Effects'],
+    thumb: './연령고지 사진.png',
+    youtubeId: 'zMBDrxqgD_4',
     description: '포트폴리오',
-    tools: ['Cinema4D'],
-    role: 'modeling',
-    duration: '00:30'
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['Cinema4D', 'After Effects'],
+    role: '3D',
+    duration: '00:18'
+  },
+  {
+    id: 'Ddasd',
+    title:'날 좀 좋아하시개',
+    categories: ['AI','PS'],
+    thumb: './Plz.png',
+    youtubeId: '',
+    description: '포트폴리오',
+    // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
+    tools: ['AI', 'PS'],
+    role: '',
+    duration: ''
   }
 ];
-
 // 2) 상태
 const TAG_ALL = 'All';
 let activeTag = TAG_ALL;
