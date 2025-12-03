@@ -3,7 +3,7 @@ const PROJECTS = [
   {
     id: 'reel-2025',
     title: 'IF 포트폴리오',
-    categories: ['Cut', 'Premiere Pro', 'After Effects', '촬영', '연출'],
+    categories: ['Premiere Pro', 'After Effects', '촬영', '연출'],
     thumb: './IF 포스터 양정모.png',
     youtubeId: 'xXLmdcuTph4',
     description: '포트폴리오',
@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     id: 'ad-mock-juice',
     title: 'KANU 광고 포트폴리오',
-    categories: ['After Effects', 'Premiere Pro', 'Cut', '촬영', '연출'],
+    categories: ['After Effects', 'Premiere Pro', '촬영', '연출'],
     thumb: './카누 사진.png',
     youtubeId: 'RwGcRT29wzo',
     description: '포트폴리오',
@@ -63,12 +63,12 @@ const PROJECTS = [
   {
     id: 'Ddasd',
     title:'날 좀 좋아하시개 포트폴리오',
-    categories: ['AI','PS','design'],
+    categories: ['Illustrator','PS','design'],
     thumb: './Plz.png',
     youtubeId: '',
     description: '포트폴리오',
     // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
-    tools: ['AI', 'PS'],
+    tools: ['AIIllustrator', 'PS'],
     role: '',
     duration: ''
   },
@@ -86,10 +86,10 @@ const PROJECTS = [
   },
   {
     id: 'nelson museum2',
-    title:'넬슨신 애니메이션 아트 센터 왕후 심청 트레일러 인트로',
-    categories: ['after effects','design'],
+    title:'넬슨신 애니메이션 아트 센터 왕후 심청 트레일러',
+    categories: ['after effects','design', 'premiere pro'],
     thumb: 'Nelson2.png',
-    youtubeId: '-E3ZvVwMbKY',
+    youtubeId: 'BEQHedyPZAw',
     description: '포트폴리오',
     // description: `<a href="./test.pdf" target="_blank" rel="noopener noreferrer">pdf</a>`,
     tools: ['after effects'],
